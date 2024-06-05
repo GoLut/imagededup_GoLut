@@ -3,11 +3,13 @@ from typing import List, Union, Tuple
 
 import numpy as np
 from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
 
 from imagededup.utils.logger import return_logger
 
 
-IMG_FORMATS = ['JPEG', 'PNG', 'BMP', 'MPO', 'PPM', 'TIFF', 'GIF', 'WEBP']
+IMG_FORMATS = ['JPEG', 'PNG', 'BMP', 'MPO', 'PPM', 'TIFF', 'GIF', 'WEBP', 'HEIF']
 logger = return_logger(__name__)
 
 

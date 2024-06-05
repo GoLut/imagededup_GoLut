@@ -3,6 +3,8 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
 
 from imagededup.utils.image_utils import (
     preprocess_image,

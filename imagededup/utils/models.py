@@ -1,4 +1,7 @@
 from PIL.Image import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
+
 from typing import Callable, NamedTuple, Optional
 
 import torch

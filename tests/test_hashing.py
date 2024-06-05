@@ -2,6 +2,8 @@ import os
 import sys
 from pathlib import Path
 from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
 
 from multiprocessing import cpu_count
 import pytest

@@ -6,6 +6,9 @@ import warnings
 from multiprocessing import cpu_count
 import numpy as np
 from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
+
 import torch
 
 from imagededup.handlers.search.retrieval import get_cosine_similarity

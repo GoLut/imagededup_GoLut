@@ -7,6 +7,9 @@ import json
 import numpy as np
 import torch
 from PIL import Image
+from pillow_heif import register_heif_opener
+register_heif_opener()
+
 import pytest
 from torchvision.transforms import transforms
 
